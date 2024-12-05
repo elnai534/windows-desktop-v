@@ -10,8 +10,8 @@ os.environ["TK_SILENCE_DEPRECATION"] = "1"
 window = tk.Tk()
 window.config(highlightbackground="black")
 window.overrideredirect(True)
-window.attributes("-alpha", 0.0)#transparency for MAC
-# window.wm_attributes("-transparentcolor", "black")
+# window.attributes("-alpha", 0.0)#transparency for MAC
+window.wm_attributes("-transparentcolor", "black")
 
 # Load GIFs
 gifs = load_gifs(impath)
